@@ -49,6 +49,29 @@ public class climbSystems extends Subsystem {
 
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
+        public void whiskerRelease() {
+            whiskerRelease.set(.5)
+        }
+        public void armsEngage() {
+            rightArm.set(1)
+            leftArm.set(1)
+        }
+        public void armsDisengage() {
+            rightArm.set(0)
+            leftArm.set(0)
+        }
+        public void engage() {
+            climbingMotor.set(0.5);
+        } 
+        public void climb(){
+            climbingMotor.set(1);
+        }
+        public void stop(){
+            climbingMotor.set(0.5);
+        }
+        public void reverse(){
+            climbingMotor.set(-0.5)
+        }
     }
 }
 
