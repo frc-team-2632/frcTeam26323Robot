@@ -60,16 +60,16 @@ public class climbSystems extends Subsystem {
             rightArm.set(0)
             leftArm.set(0)
         }
-        public void engage() {
+        public void climbEngage() {
             climbingMotor.set(0.5);
         } 
         public void climb(){
             climbingMotor.set(1);
         }
-        public void stop(){
-            climbingMotor.set(0.5);
+        public void climbStop(){
+            climbingMotor.set(0);
         }
-        public void reverse(){
+        public void climbReverse(){
             climbingMotor.set(-0.5)
         }
     }
